@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>معايدة العيد</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="wrap">
+
+<header class="top">
+<h1>معايدة العيد</h1>
+<p>اكتب اسمك ثم حمل الصورة</p>
+</header>
+
+<section class="stage">
+
+<div id="card" class="card">
+
+<img class="bg" src="template.png.png">
+
+<div id="nameText" class="name">
+اسمك هنا
+</div>
+
+</div>
+
+</section>
+
+<section class="controls">
+
+<label>الاسم</label>
+<input
+type="text"
+id="nameInput"
+placeholder="اكتب اسمك"
+/>
+
+<label>مكان الاسم</label>
+<select id="posSelect">
+<option value="top">أعلى</option>
+<option value="center" selected>الوسط</option>
+<option value="bottom">أسفل</option>
+</select>
+
+<label>لون الخط</label>
+<select id="colorSelect">
+<option value="#ffffff" selected>أبيض</option>
+<option value="#000000">أسود</option>
+</select>
+
+<label>حجم الخط</label>
+<select id="sizeSelect">
+<option value="18">18</option>
+<option value="20">20</option>
+<option value="22">22</option>
+<option value="24" selected>24</option>
+<option value="26">26</option>
+<option value="28">28</option>
+<option value="30">30</option>
+</select>
+
+<button id="downloadBtn">
+تحميل الصورة
+</button>
+
+</section>
+
+</main>
+
+<script src="https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
